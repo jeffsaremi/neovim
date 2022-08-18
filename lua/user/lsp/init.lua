@@ -37,13 +37,3 @@ local on_attach = function(client, bufnr)
   buf_set_keymap("n", "<space>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
 
 end
-
--- require'lspconfig'.solargraph.setup{
---   --cmd = { "bundle", "exec", "solargraph", "stdio" },
---   on_attach = on_attach,
---   settings = {
---     solargraph = {
---       diagnostics = true
---     }
---   }
--- }

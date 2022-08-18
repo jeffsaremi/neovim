@@ -52,7 +52,6 @@ return packer.startup(function(use)
 	use({ "akinsho/bufferline.nvim", commit = "c78b3ecf9539a719828bca82fc7ddb9b3ba0c353" })
 	use({ "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" })
 	use({ "nvim-lualine/lualine.nvim", commit = "3362b28f917acc37538b1047f187ff1b5645ecdd" })
-	--use({ "akinsho/toggleterm.nvim", commit = "aaeed9e02167c5e8f00f25156895a6fd95403af8" })
 	use({ "ahmedkhalf/project.nvim", commit = "541115e762764bc44d7d3bf501b6e367842d3d4f" })
 	use({ "lewis6991/impatient.nvim", commit = "969f2c5c90457612c09cf2a13fee1adaa986d350" })
 	use({ "lukas-reineke/indent-blankline.nvim", commit = "6177a59552e35dfb69e1493fd68194e673dc3ee2" })
@@ -79,7 +78,8 @@ return packer.startup(function(use)
 	use({ "neovim/nvim-lspconfig", commit = "148c99bd09b44cf3605151a06869f6b4d4c24455" }) -- enable LSP
 	use({ "williamboman/nvim-lsp-installer", commit = "e9f13d7acaa60aff91c58b923002228668c8c9e6" }) -- simple to use language server installer
 	use({ "jose-elias-alvarez/null-ls.nvim", commit = "ff40739e5be6581899b43385997e39eecdbf9465" }) -- for formatters and linters
-  use({ "vim-ruby/vim-ruby"}) 
+  use({ "vim-ruby/vim-ruby" }) 
+
 	-- Telescope
 	use({ "nvim-telescope/telescope.nvim", commit = "d96eaa914aab6cfc4adccb34af421bdd496468b0" })
 
@@ -93,7 +93,9 @@ return packer.startup(function(use)
 	use({ "lewis6991/gitsigns.nvim", commit = "c18e016864c92ecf9775abea1baaa161c28082c3" })
 
   -- vim-tmux integration
-  use({ 'christoomey/vim-tmux-navigator'})
+  use({ 
+    'christoomey/vim-tmux-navigator',
+  })
 
   -- auto session manager 
   use {
@@ -107,7 +109,7 @@ return packer.startup(function(use)
   }
 
   -- git integration
-  use({ 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' })
+  -- use({ 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' })
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

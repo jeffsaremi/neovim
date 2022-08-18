@@ -23,17 +23,17 @@ for _, server in pairs(servers) do
 	lspconfig[server].setup(opts)
 end
 
-local util = require 'lspconfig/util'
-lspconfig['solargraph'].setup {
-  cmd = { "solargraph", "stdio" },
-  on_attach = require("user.lsp.handlers").on_attach,
-  settings = {
-    solargraph = {
-      diagnostics  = true
-    }
-  },
-  init_options = {
-    formatting = true
-  },
-  root_dir  = util.root_pattern("Gemfile", ".git")
-}
+-- local util = require 'lspconfig/util'
+-- lspconfig['solargraph'].setup {
+--   cmd = { "solargraph", "stdio" },
+--   on_attach = require("user.lsp.handlers").on_attach,
+--   settings = {
+--     solargraph = {
+--       diagnostics  = true
+--     }
+--   },
+--   init_options = {
+--     formatting = true
+--   },
+--   root_dir  = util.root_pattern("Gemfile", ".git")
+-- }
