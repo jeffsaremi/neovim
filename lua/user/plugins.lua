@@ -108,6 +108,12 @@ return packer.startup(function(use)
     end
   }
 
+  -- rust integration
+  use({ 'simrat39/rust-tools.nvim' })
+
+  -- Debugger Adapter Protocol
+  use({ 'mfussenegger/nvim-dap' })
+
   -- git integration
   -- use({ 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' })
 
