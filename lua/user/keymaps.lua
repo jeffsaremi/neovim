@@ -75,6 +75,7 @@ keymap("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", opts)
 keymap("n", "<leader>fw", "<cmd>Telescope grep_string<cr>", opts)
 keymap("n", "<leader>fG", "<cmd>Telescope git_files<cr>", opts)
 keymap("n", "<leader>fk", "<cmd>Telescope keymaps<cr>", opts)
+keymap("n", "<leader>fr", "<cmd>Telescope resume<cr>", opts)
 
 -- NvimTree --
 keymap("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", opts)
